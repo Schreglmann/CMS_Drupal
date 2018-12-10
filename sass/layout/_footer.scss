@@ -1,0 +1,118 @@
+footer {
+  margin-top: $standardp;
+  padding: $standardp;
+  background: $brandblue;
+  color: white;
+  font-size: $medium;
+  word-break: break-word;
+  .footerlayout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    p {
+      &:nth-of-type(2) {
+        text-align: right;
+	display:inline;
+      }
+      &:nth-of-type(3) {
+        margin-top: $standardp;
+        p {
+          width: 50%;
+          margin-bottom: $standardp;
+        }
+      }
+    }
+  }
+  h2 {
+    font-size: $medium;
+    margin: 0;
+  }
+
+  a {
+    color: white;
+    border-right: 1px solid white;
+    padding: 0 $standardp / 2;
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    &:last-of-type {
+      border-right: none;
+      padding-right: 0;
+    }
+    &:hover {
+      border-bottom: none;
+    }
+  }
+  ul {
+    font-size: $small;
+    list-style-type: disc;
+    margin: 0 0 $standardp $standardp;
+  }
+
+  p:nth-of-type(2) {
+    margin-bottom: $standardp;
+  }
+  @include breakpoint(0, 400) {
+    .footerlayout {
+      display: block;
+      a {
+        display: block;
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    div {
+      text-align: left !important;
+      p { width: 100% !important;}
+    }
+  }
+}
+
+
+.footerlayout div:first-child div div{
+  width:96vw !important;
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+}
+.footerlayout div:first-child div div p{
+  margin:0;
+  padding: 0;
+   width:96vw !important;
+}
+.footerlayout div:first-child div div p:last-child{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footerlayout div:nth-child(2) a{
+  padding-right:0;
+  border:none;
+}
+
+footer .region-footer a{
+  padding-left: 0;
+}
+
+.footerlayout .region-footer-legal p:nth-child(2) a:first-child{
+  border-right: 1px solid white !important;
+  padding-right:10px;
+}
+
+@media only screen and (max-width: 650px) {
+  .footerlayout div:first-child div div p:last-child{
+    flex-direction: column;
+    font-size:15px;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+
+.footerlayout .region-footer-legal p:nth-child(2) a:first-child{
+	border-right:0px solid;  
+//border-right: 1px solid white !important;
+ padding-right:0px !important;
+}
+}
+

@@ -1,0 +1,26 @@
+
+name: Alex_Mayer
+type: theme
+description: 'Alex-Mayer official website.'
+core: 8.x
+base theme: classy
+libraries:
+  - alex/global-styling 
+regions:
+  header: Header
+  content: Content
+  navigation: Navi
+  footer_legal: Footer_legal
+  footer: Footer
+  hero_headline: Headline_Hero
+  references: References
+  headline_leistung: Headline_Leistung
+
+  news: Alex_News
+  article_postkarten: Art_Post
+  article_award: Art_Award
+  article_cmyk: Art_Cmyk
+
+  headline1: Design
+  headline2: Strategie
+  headline3: Consulting

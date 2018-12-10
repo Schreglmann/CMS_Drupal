@@ -1,0 +1,24 @@
+@import "fonts";
+@import "reset";
+@import "variables";
+@import "base";
+@import "global";
+// You can use globs here, eg.
+@import "hamburgers/hamburgers";
+@import "layout/_footer";
+@import "layout/_header";
+@import "layout/_hero";
+
+.dynamic_content h3{
+  background-color:white !important;
+}
+@import "layout/_leistungen";
+@import "layout/_nav";
+
+.dynamic_content p{
+  background-color:white !important;
+}
+
+@import "layout/_news";
+@import "layout/_referenzen";
+@import "layout/_content";

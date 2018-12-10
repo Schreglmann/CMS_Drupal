@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .alex_h1 {
+    padding: $standardp 0 0 $standardp;
+    font-size: $xlarge;
+    color: $brandblue;
+    a:hover {
+      border-bottom: none;
+    }
+  }
+}
+
+
+@include breakpoint(0, 850)  {
+  header{
+    display:initial;
+}
+}

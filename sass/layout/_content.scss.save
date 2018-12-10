@@ -1,0 +1,7 @@
+.dynamic_content{
+margin: 25px;
+}
+
+.dynamic_content p{
+  background-color: i;
+}

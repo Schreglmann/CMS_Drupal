@@ -1,0 +1,58 @@
+ <header>
+         <div class="alex_h1">{{page.header}}</div>
+         <nav>
+            <input type="checkbox" id="button" />
+            <label for="button" onclick></label>
+            <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+            </button>
+            <section class="alex_navi">
+               {{page.navigation}}
+            </section>
+         </nav>
+         <section id='hero'>
+            <div class="alex_h2"> {{ page.hero_headline }}</div>
+            <!-- <a href='http://drupal.alex-mayer.tk/en/contact/inquiries'>Angebot einholen</a>-->
+         </section>
+      </header>
+	<section class="dynamic_content">
+      {{ page.content }}
+	</section>
+      <main>
+
+
+         <section id='leistungen'>
+           <div class='h2'> {{page.headline_leistung}}</div>
+            <article>
+             <div class="h3"> {{ page.headline1 }}</div>
+            </article>
+            <article>
+               <div class="h3">{{ page.headline2 }}</div>
+            </article>
+            <article>
+               <div class="h3">{{ page.headline3 }}</div>
+            </article>
+         </section>
+         <section id='news'>
+            <div class="h2">{{ page.news }}</div>
+            <article>
+               {{page.article_postkarten }}
+            </article>
+            <article>
+               {{page.article_award}}
+            </article>
+            <article>
+               {{page.article_cmyk}}
+            </article>
+         </section>
+         <section id='referenzen'>
+         {{page.references}}
+	 </section>
+      </main>
+      <footer class='footerlayout'>
+         {{page.footer_legal}}
+         {{page.footer}}
+      </footer>
+      <script src="main.f373aad67e4588c5dfe1.js?67a1102b3326177d47f7"></script>
